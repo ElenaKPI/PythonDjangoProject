@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio recognition</title>
+</head>
+<body>
+
+<h1>Audio recognition</h1>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="audio" required>
+    <br><br>
+    <button type="submit">Upload audio</button>
+</form>
+
+<p>Upload an audio file to analyze it.</p>
+
+{% if prediction_label %}
+    <h2>Prediction</h2>
+    <p><b>{{ prediction_label }}</b> ({{ prediction_confidence }})</p>
+{% endif %}
+
+</body>
+</html>

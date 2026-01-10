@@ -28,6 +28,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("image/", include("image_recognition.urls")),
     path("video/", include("video_recognition.urls")),
+    path("audio/", include("audio_recognition.urls")),
 ]
 
 if settings.DEBUG:

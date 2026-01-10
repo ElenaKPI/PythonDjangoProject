@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "debug_toolbar",
     "image_recognition.apps.ImageRecognitionConfig",
     "video_recognition.apps.VideoRecognitionConfig",
+    "audio_recognition.apps.AudioRecognitionConfig",
 ]
 
 MIDDLEWARE = [
