@@ -21,5 +21,10 @@
     <p><b>{{ prediction_label }}</b> ({{ prediction_confidence }})</p>
 {% endif %}
 
+{% if spectrogram %}
+<h3>Spectrogram</h3>
+<img src="/media/spectrograms/{{ spectrogram }}" width="300">
+{% endif %}
+
 </body>
 </html>
