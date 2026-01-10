@@ -20,5 +20,10 @@
     <p><strong>Data type:</strong> {{ image_dtype }}</p>
 {% endif %}
 
+{% if prediction_label %}
+    <h3>Prediction:</h3>
+    <p><b>{{ prediction_label }}</b> ({{ prediction_confidence }}%)</p>
+{% endif %}
+
 </body>
 </html>
