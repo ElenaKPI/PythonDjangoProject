@@ -29,6 +29,7 @@ urlpatterns = [
     path("image/", include("image_recognition.urls")),
     path("video/", include("video_recognition.urls")),
     path("audio/", include("audio_recognition.urls")),
+    path("emotion/", include("emotion_recognition.urls")),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

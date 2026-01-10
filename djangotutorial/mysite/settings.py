@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "image_recognition.apps.ImageRecognitionConfig",
     "video_recognition.apps.VideoRecognitionConfig",
     "audio_recognition.apps.AudioRecognitionConfig",
+    "emotion_recognition.apps.EmotionRecognitionConfig",
 ]
 
 MIDDLEWARE = [

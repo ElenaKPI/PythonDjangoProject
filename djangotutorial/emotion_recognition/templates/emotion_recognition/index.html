@@ -1,0 +1,13 @@
+<h1>Emotion recognition</h1>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="photo" required>
+    <button type="submit">Analyze</button>
+</form>
+
+{% if emotion %}
+<h2>Result</h2>
+<p><b>{{ emotion }}</b> ({{ confidence|floatformat:2 }}%)</p>
+<img src="/media/{{ image }}" width="300">
+{% endif %}
