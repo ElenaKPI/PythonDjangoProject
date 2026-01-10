@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image recognition</title>
+</head>
+<body>
+
+<h1>Image recognition</h1>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="image" required>
+    <br><br>
+    <button type="submit">Upload</button>
+</form>
+
+{% if image_shape %}
+    <h2>Image info:</h2>
+    <p><strong>Shape:</strong> {{ image_shape }}</p>
+    <p><strong>Data type:</strong> {{ image_dtype }}</p>
+{% endif %}
+
+</body>
+</html>
