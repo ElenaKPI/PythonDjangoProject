@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "debug_toolbar",
     "image_recognition.apps.ImageRecognitionConfig",
+    "video_recognition.apps.VideoRecognitionConfig",
 ]
 
 MIDDLEWARE = [
