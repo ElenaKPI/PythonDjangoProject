@@ -113,7 +113,7 @@
 - відображати результат класифікації та рівень впевненості
 
 **Демо (скриншот):**  
-
+![Emotion recognition](screenshots/emotion_recognition.png)
 
 **Використані технології:**
 - Django  
