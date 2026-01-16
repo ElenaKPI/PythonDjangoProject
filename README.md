@@ -78,7 +78,7 @@
 - відображати прогноз та рівень впевненості
 
 **Демо (скриншот):**  
-
+![Audio recognition](screenshots/audio_recognition.png)
 
 **Використані технології:**
 - Django  
@@ -113,7 +113,7 @@
 - відображати результат класифікації та рівень впевненості
 
 **Демо (скриншот):**  
-
+![Emotion recognition](screenshots/emotion_recognition.png)
 
 **Використані технології:**
 - Django  
